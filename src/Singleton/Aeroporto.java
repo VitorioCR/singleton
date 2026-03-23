@@ -1,43 +1,44 @@
 package Singleton;
 
-public class SistemaHospital {
-    private SistemaHospital() {};
-    private static SistemaHospital instance = new SistemaHospital();
+public class SistemaAeroporto {
+    private SistemaAeroporto() {};
 
-    public static SistemaHospital getInstance() {
+    private static SistemaAeroporto instance = new SistemaAeroporto();
+
+    public static SistemaAeroporto getInstance() {
         return instance;
     }
 
-    private String nomeHospital;
-    private String medicoLogado;
-    private String pacienteAtendido;
-    private String departamentoAtivo;
+    private String nomeAeroporto;
+    private String operadorLogado;
+    private String vooEmDestaque;
+    private String pistaAtiva;
 
-    public String getNomeHospital() {
-        return nomeHospital;
+    public String getNomeAeroporto() {
+        return nomeAeroporto;
     }
-    public void setNomeHospital(String nomeHospital) {
-        this.nomeHospital = nomeHospital;
-    }
-
-    public String getMedicoLogado() {
-        return medicoLogado;
-    }
-    public void setMedicoLogado(String medicoLogado) {
-        this.medicoLogado = medicoLogado;
+    public void setNomeAeroporto(String nomeAeroporto) {
+        this.nomeAeroporto = nomeAeroporto;
     }
 
-    public String getPacienteAtendido() {
-        return pacienteAtendido;
+    public String getOperadorLogado() {
+        return operadorLogado;
     }
-    public void setPacienteAtendido(String pacienteAtendido) {
-        this.pacienteAtendido = pacienteAtendido;
+    public void setOperadorLogado(String operadorLogado) {
+        this.operadorLogado = operadorLogado;
     }
 
-    public String getDepartamentoAtivo() {
-        return departamentoAtivo;
+    public String getVooEmDestaque() {
+        return vooEmDestaque;
     }
-    public void setDepartamentoAtivo(String departamentoAtivo) {
-        this.departamentoAtivo = departamentoAtivo;
+    public void setVooEmDestaque(String vooEmDestaque) {
+        this.vooEmDestaque = vooEmDestaque;
+    }
+
+    public String getPistaAtiva() {
+        return pistaAtiva;
+    }
+    public void setPistaAtiva(String pistaAtiva) {
+        this.pistaAtiva = pistaAtiva;
     }
 }
